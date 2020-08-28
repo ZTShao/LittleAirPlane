@@ -12,25 +12,28 @@
         .moving-area {
             position: relative;
             background: deepskyblue;
-            margin-left: 5px;
-            margin-top: 5px;
             height: 400px;
             width: 400px;
-            border: 2px solid black
+            border: 2px solid black;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 50px;
         }
 
         .control-panel {
-            margin-left: 5px;
             display: flex;
             list-style-type: none;
             margin-top: 10px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%);
         }
 
         .control-button {
             width: 50px;
             height: 30px;
             background: white;
-            margin-left: 40px;
+            margin: 5px;
         }
 
         #arrow {
@@ -49,6 +52,21 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .info {
+            font-style: oblique;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+            display: block;
+            text-align: center;
+            margin-top: 120px;
         }
     </style>
 </head>
@@ -71,6 +89,8 @@
         <button type="button" class="control-button" id="backward">后退</button>
     </li>
 </ul>
+<div class="info">小飞机游戏，可以通过点击按钮，或者使用键盘的上下左右键进行飞行</div>
+<a href="https://github.com/ZTShao">我的主页，@邵小皮</a>
 </body>
-<script type="text/javascript" src="task3.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </html>
