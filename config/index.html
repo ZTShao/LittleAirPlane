@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LittleGame</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .moving-area {
+            position: relative;
+            background: deepskyblue;
+            margin-left: 5px;
+            margin-top: 5px;
+            height: 400px;
+            width: 400px;
+            border: 2px solid black
+        }
+
+        .control-panel {
+            margin-left: 5px;
+            display: flex;
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        .control-button {
+            width: 50px;
+            height: 30px;
+            background: white;
+            margin-left: 40px;
+        }
+
+        #arrow {
+            background: url("飞机.png");
+            margin-left: 50%;
+            margin-top: 50%;
+            height: 32px;
+            width: 32px;
+        }
+
+        #note {
+            display: none;
+            position: absolute;
+            font-size: 30px;
+            color: red;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<div class="moving-area">
+    <div id="arrow"></div>
+    <p id="note">!出轨了!</p>
+</div>
+<ul class="control-panel">
+    <li>
+        <button type="button" class="control-button" id="clockwise">顺转</button>
+    </li>
+    <li>
+        <button type="button" class="control-button" id="conterclockwise">逆转</button>
+    </li>
+    <li>
+        <button type="button" class="control-button" id="forward">前进</button>
+    </li>
+    <li>
+        <button type="button" class="control-button" id="backward">后退</button>
+    </li>
+</ul>
+</body>
+<script type="text/javascript" src="task3.js"></script>
+</html>

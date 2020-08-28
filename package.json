@@ -1,0 +1,9 @@
+{
+  "homepage":"https://github.com/ZTShao/LittleAirPlane",
+  "scripts":{
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d public"
+  },
+}
