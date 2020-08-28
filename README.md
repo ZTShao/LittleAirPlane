@@ -1,2 +1,2 @@
 # LittleAirPlane
-Little game using basic Front-End stuff
+Little Game -- Flying A Plane!
